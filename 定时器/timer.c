@@ -1,5 +1,8 @@
-#include "REGX52.H"
-	void Timer0_Init(void)		//1??@12.000MHz
+#include <REGX52.H>
+#include"Timer0_Init"
+
+
+void Timer0_Init(void)		//1??@12.000MHz
 {
 	TMOD &= 0xF0;			//设置定时器模式
 	TL0 = 0xF4;				//设置定时初始值
