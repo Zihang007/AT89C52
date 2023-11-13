@@ -36,6 +36,12 @@ void main(){
 	Timer0_Init();
 	while(1){
 		while(T0_count>=1000){
+			LCD_disp_number(2,0,hour,2);
+			LCD_disp_number(2,3,min,2);
+			LCD_disp_number(2,6,second,2);
+			LCD_disp_string(1,0,"time:");
+			LCD_disp_char(2,2,':');
+			LCD_disp_char(2,5,':');
 			T0_count=0;
 			if(second<59){
 				second++;
@@ -50,12 +56,6 @@ void main(){
 						hour=0;
 				}
 			}
-			LCD_disp_number(2,0,hour,2);
-			LCD_disp_number(2,3,min,2);
-			LCD_disp_number(2,6,second,2);
-			LCD_disp_string(1,0,"time:");
-			LCD_disp_char(2,2,':');
-			LCD_disp_char(2,5,':');
 		}
 		if(P3_1==0){
 			Delay20ms;
