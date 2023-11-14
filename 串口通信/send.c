@@ -19,7 +19,7 @@ void Delay1000ms(void)	//@11.0592MHz
 	} while (--i);
 }
 void main(){
-	Uart1_Init();
+	Uart_Init();
 	while(1){
 		Uart_SendByte(sec);
 		Delay1000ms();
