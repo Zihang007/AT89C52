@@ -1,7 +1,7 @@
 #include <REGX52.H>
 
 
-void Uart1_Init(void)	//4800bps@11.0592MHz
+void Uart_Init(void)	//4800bps@11.0592MHz
 {
 	PCON &= 0x7F;		//波特率不倍速
 	SCON = 0x50;		//8位数据,可变波特率
