@@ -10,6 +10,15 @@ void UART_Routine () interrupt 4
 	}
 }
 
+/*void UART_Routine () interrupt 4
+{
+	if(RI==1){
+ 
+		RI=0;
+	}
+}*/
+//这是一个中断模块；
+
 void main(){
 	Uart_Init();
 	while(1){
