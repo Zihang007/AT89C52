@@ -1,5 +1,5 @@
-#ifndef __MATRIX_H__
-#define __MATRIX_H__
+#ifndef __MATRIX_LED_H__
+#define __MATRIX_LED_H__
 
 void MatrixLED_ShowColumn(unsigned char Column,Data);
 void MatrixLED_Init();
