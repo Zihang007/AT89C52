@@ -1,4 +1,4 @@
-//点阵屏上初步显示，显示固定图形；
+//显示动画；
 #include <REGX52.H>
 #include"Matrix.h"
 
