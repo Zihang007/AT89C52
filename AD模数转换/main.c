@@ -8,13 +8,13 @@ void main (){
 	LCD_disp_string(1,0,"ADJ NTC RG");
 	while(1)
 	{
-		ADValue=XPT2046_ReadAD(XPT2046_XP_8);
+		ADValue=XPT2046_ReadAD(XPT2046_XP_8);//类似于滑动变阻器；
 		LCD_disp_number(2,0,ADValue,3);
 		Delay(10);
-		ADValue=XPT2046_ReadAD(XPT2046_YP_8);
+		ADValue=XPT2046_ReadAD(XPT2046_YP_8);//热敏电阻；
 		LCD_disp_number(2,4,ADValue,3);
 		Delay(10);
-		ADValue=XPT2046_ReadAD(XPT2046_VBAT_8);
+		ADValue=XPT2046_ReadAD(XPT2046_VBAT_8);//光敏电阻；
 		LCD_disp_number(2,8,ADValue,3);
 		Delay(10);
 		
